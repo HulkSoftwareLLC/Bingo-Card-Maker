@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Bingo Card Maker — Official Releases</title>
+  <meta name="description" content="Bingo Card Maker Flutter app — overview, screenshots, and release downloads."/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="icon" href="favicon.ico"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-content">
+    <div class="brand">
+      <img src="images/app-icon.png" alt="App icon" class="app-icon" onerror="this.style.display='none'"/>
+      <h1>Bingo Card Maker</h1>
+      <p class="subtitle">Create, customize, and share bingo cards in seconds.</p>
+    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#releases">Releases</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div>
+        <h2>About</h2>
+        <p>
+          Bingo Card Maker is a Flutter application designed to help you generate
+          professional-looking bingo cards quickly. Customize size, themes, and content,
+          then export or share for printing or digital use.
+        </p>
+        <ul class="feature-list">
+          <li>Fast card generation with customizable grid sizes</li>
+          <li>Themes, colors, and images for rich designs</li>
+          <li>Import word lists and shuffle entries</li>
+          <li>Export to PDF or image formats</li>
+          <li>Works across Android, iOS, and Web</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="#releases">Download Releases</a>
+          <a class="btn" href="#screenshots">View Screenshots</a>
+        </div>
+      </div>
+      <div class="video-frame">
+        <!-- Optional: Replace with an actual promo/video or animated GIF -->
+        <img src="images/hero.png" alt="App preview" onerror="this.style.display='none'"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="screenshots" class="section alt">
+    <div class="container">
+      <h2>Screenshots</h2>
+      <div id="screenshot-grid" class="screenshot-grid" aria-live="polite">
+        <!-- Filled by app.js -->
+      </div>
+      <p class="hint">
+        Tip: Add your images to public_html/images and update the screenshots in app.js
+        if you want custom titles or ordering.
+      </p>
+    </div>
+  </section>
+
+  <section id="releases" class="section">
+    <div class="container">
+      <div class="releases-header">
+        <h2>Releases</h2>
+        <div class="releases-meta">
+          <span id="latest-version" class="badge">Latest: —</span>
+          <button id="refresh-releases" class="btn small" type="button" aria-label="Refresh releases">Refresh</button>
+        </div>
+      </div>
+
+      <div id="releases-list" class="release-list" aria-live="polite">
+        <!-- Filled by app.js -->
+      </div>
+
+      <details class="hint">
+        <summary>How to update release info</summary>
+        <p>
+          Edit releases.json in public_html to add a new entry. Each release can include
+          assets like APK, IPA/TestFlight link, Web build URL, etc. Then click “Refresh”.
+        </p>
+      </details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p>&copy; <span id="year"></span> Bingo Card Maker. All rights reserved.</p>
+    <div class="links">
+      <!-- Replace or add links as needed -->
+      <a href="#" aria-label="Privacy Policy">Privacy</a>
+      <a href="#" aria-label="Terms of Service">Terms</a>
+      <a href="#" aria-label="Support">Support</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
